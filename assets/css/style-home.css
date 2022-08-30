@@ -5,11 +5,20 @@ body {
   height: 100%;
   background-color: #1a1a1a;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-shadow: 1px 2px 2px black;
+  color: #fff;
+  display: grid;
+  grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 10vh 80vh 10vh;
 }
 
 .cabecalho {
+  grid-area: cabecalho;
   width: 100%;
-  height: 70px;
   background-color: #101010;
   display: flex;
   align-items: center;
@@ -17,10 +26,10 @@ body {
 }
 
 .container-logo {
-  width: 300px;
+  width: 400px;
   height: 45px;
-  margin: 10px;
   padding: 12.5px 0 0 0;
+  margin-left: 30px;
   border-radius: 10px;
   background-color: #000;
 }
@@ -30,12 +39,69 @@ body {
 }
 
 .container-logo a img {
-  width: 300px;
+  width: 400px;
+}
+
+.conteudo {
+  grid-area: conteudo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-slogan {
+  width: 70%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px #000;
+  text-align: center;
+}
+
+.container-slogan h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.container-sobre {
+  width: 70%;
+  height: 200px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container-sobre h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.container-botao {
+  width: 350px;
+  height: 100px;
+  box-shadow: 0px -5px 20px #000;
+}
+
+.botao {
+  width: 100%;
+  height: 100%;
+  background-color: #FAD43D;
+  border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rodape {
+  grid-area: rodape;
   width: 100%;
-  height: 70px;
   background-color: #101010;
   display: flex;
   justify-content: center;
@@ -59,26 +125,44 @@ i[class="fa-brands fa-github"] {
   text-align: center;
 }
 
+/* Parte do Mobile */
 @media(max-width: 769px) {
-  body {
-    font-size: 14px;
-  }
 
   .cabecalho {
-    justify-content: center;
-  }
-}
-
-@media(max-width: 280px) {
-  body {
-    font-size: 14px;
+    align-items: center;
   }
 
   .container-logo {
-    width: 200px;
+    width: 240px;
+    margin: auto;
   }
 
   .container-logo a img {
-    width: 200px;
+    width: 240px;
+  }
+
+  .container-slogan {
+    width: 80%;
+    height: 100px;
+    padding: 8px;
+  }
+
+  .container-slogan h1 {
+    font-size: 20px;
+  }
+
+  .container-sobre {
+    width: 80%;
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .container-sobre h2 {
+    font-size: 20px;
+  }
+
+  .container-botao {
+    width: 80%;
+    height: 70px;
   }
 }
