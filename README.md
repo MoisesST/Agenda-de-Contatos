@@ -1,6 +1,8 @@
 # Protótipo
 
-<https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/A.g.e.n.d.a.D.e.C.o.n.t.a.t.o.s?node-id=3%3A33>
+<https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A33>
+
+<https://www.figma.com/proto/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A34&scaling=min-zoom&page-id=3%3A33&starting-point-node-id=3%3A34>
 
 # GitHub Pages
 
@@ -22,7 +24,7 @@ Funções
 - [ ] Função anônima com argumento
 - [ ] Função anônima sem argumento
 - [ ] Função anônima com retorno
-- [ x ] Função auto-executável
+- [x] Função auto-executável
 - [ ] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
@@ -34,7 +36,7 @@ Eventos
 - [ ] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
-- [x] Imprimir alguma propriedade do objeto event recebido como parâmetro
+- [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
 - [ ] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai)
 
 Acesso aos elementos DOM do HTML
