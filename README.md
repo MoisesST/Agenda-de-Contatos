@@ -1,6 +1,6 @@
 # Protótipo
 
-<https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/Desenvolvimento-Web-2?node-id=3%3A33>
+<https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/A.g.e.n.d.a.D.e.C.o.n.t.a.t.o.s?node-id=3%3A33>
 
 # GitHub Pages
 
@@ -26,7 +26,7 @@ Funções
 - [ ] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
-- [ x ] Função Flecha - Arrow Function
+- [x] Função Flecha - Arrow Function
 
 Eventos
 
@@ -34,7 +34,7 @@ Eventos
 - [ ] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
-- [ x ] Imprimir alguma propriedade do objeto event recebido como parâmetro
+- [x] Imprimir alguma propriedade do objeto event recebido como parâmetro
 - [ ] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai)
 
 Acesso aos elementos DOM do HTML
@@ -43,7 +43,7 @@ Acesso aos elementos DOM do HTML
 - [ ] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
-- [ x ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
@@ -72,8 +72,8 @@ Qualidade do código
 - [ ] Usar strict mode
 - [ ] Usar Module Pattern
 - [ ] Usar pasta assets e subpastas resources e libraries para organizar o código
-- [ x ] Usar let ou const ao invés de var
-- [ x ] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
+- [x] Usar let ou const ao invés de var
+- [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
 Formulário
 

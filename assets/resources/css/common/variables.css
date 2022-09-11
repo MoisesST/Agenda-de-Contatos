@@ -1,0 +1,65 @@
+:root {
+
+  /* 1 or 2 or 3...n = level */
+
+  --white-1: #FFF;
+  --black-1: #000;
+  --red-1: #e71a1a;
+  --red-2: #EF4D37;
+  --yellow-1: #ffd500;
+  --yellow-2: #FAD43D;
+  --blue-1: #005dff;
+  --blue-2: #00B0F0;
+  --green-1: #29db26;
+  --green-2: #98FF96;
+  --grey-1: #101010;
+  --grey-2: #1a1a1a;
+  --grey-3: #333;
+
+  /* dsk = desktop  */
+  --dsk-h1-font-size-1: 2rem;
+  --dsk-h2-font-size-2: 1.375rem;
+  --dsk-p-font-size-3: 1rem;
+
+  /* mob = mobile   */
+  --mob-h1-font-size-1: 1.375rem;
+  --mob-h2-font-size-2: 1rem;
+  --mob-p-font-size-3: 0.75rem;
+
+
+  --width-percent-1: 100%;
+
+
+  --width-rem-1: 56.25rem;
+  --width-rem-2: 25rem;
+
+
+  --height-rem-1: 4rem;
+  --height-rem-2: 2.5rem;
+
+
+  --width-vh-1: 100vh;
+
+  --height-vh-1: 100vh;
+
+
+  --width-vw-1: 100vw;
+
+  --height-vw-1: 100vw;
+
+
+  --width-vmax-1: 100vmax;
+
+  --height-vmax-1: 100vmax;
+
+
+  --width-vmin-1: 100vmin;
+
+  --height-vmin-1: 100vmin;
+
+
+  /* def = default  */
+  --def-font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+  --radius-untitle: 10px;
+}
