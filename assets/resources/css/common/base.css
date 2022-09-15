@@ -1,0 +1,31 @@
+body {
+  width: var(--width-percent-1);
+  height: var(--width-percent-1);
+  font-family: var(--def-font-family);
+  color: var(--main-font-color);
+  text-shadow: var(--tx-shadow);
+  background: var(--grey-2);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: auto 87vh auto;
+}
+
+header, footer {
+  background: var(--grey-1);
+  width: var(--width-percent-1);
+  height: var(--height-rem-1);
+}
+
+main {
+  grid-area: main;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-1);
+  transition: 0.5s;
+}

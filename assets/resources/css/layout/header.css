@@ -1,0 +1,9 @@
+.header {
+  grid-area: header;
+  box-shadow: var(--box-shadow-bottom);
+}
+
+.header__container {
+  width: var(--full-page-width);
+  height: var(--header-and-footer-height);
+}

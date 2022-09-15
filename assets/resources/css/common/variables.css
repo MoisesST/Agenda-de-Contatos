@@ -1,17 +1,15 @@
 :root {
-
   /* 1 or 2 or 3...n = level */
-
-  --white-1: #FFF;
+  --white-1: #fff;
   --black-1: #000;
   --red-1: #e71a1a;
-  --red-2: #EF4D37;
+  --red-2: #ef4d37;
   --yellow-1: #ffd500;
-  --yellow-2: #FAD43D;
+  --yellow-2: #fad43d;
   --blue-1: #005dff;
-  --blue-2: #00B0F0;
+  --blue-2: #00b0f0;
   --green-1: #29db26;
-  --green-2: #98FF96;
+  --green-2: #98ff96;
   --grey-1: #101010;
   --grey-2: #1a1a1a;
   --grey-3: #333;
@@ -26,40 +24,48 @@
   --mob-h2-font-size-2: 1rem;
   --mob-p-font-size-3: 0.75rem;
 
+  /* def = default */
+  --def-font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  --main-font-color: var(--white-1);
+
+  /* --font: small-caps bold var(--dsk-p-font-size-3) var(--def-font-family); */
+
+  --radius-2: 10px;
+
+  --tx-shadow: 1px 2px 2px var(--black-1);
+
+  --box-shadow-bottom: 0px 5px 20px var(--black-1);
+  --box-shadow-top: 0px -5px 20px var(--black-1);
+
+  /* 1 or 2 or 3...n = level */
+
+  --page-center-container-width: 56.25rem;
+  --header-and-footer-height: 4rem;
+  --full-page-width: 100%;
 
   --width-percent-1: 100%;
 
-
   --width-rem-1: 56.25rem;
   --width-rem-2: 25rem;
-
+  --width-rem-2: 25rem;
 
   --height-rem-1: 4rem;
   --height-rem-2: 2.5rem;
-
 
   --width-vh-1: 100vh;
 
   --height-vh-1: 100vh;
 
-
   --width-vw-1: 100vw;
 
   --height-vw-1: 100vw;
 
-
   --width-vmax-1: 100vmax;
 
-  --height-vmax-1: 100vmax;
-
+  --height-vmax-1: 8vmax;
 
   --width-vmin-1: 100vmin;
 
   --height-vmin-1: 100vmin;
-
-
-  /* def = default  */
-  --def-font-family: 'Roboto', Arial, Helvetica, sans-serif;
-
-  --radius-untitle: 10px;
 }

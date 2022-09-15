@@ -1,8 +1,8 @@
-# Protótipo
+# Prototype
 
-<https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A33>
+ - [Prototype](https://www.figma.com/file/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A33)
 
-<https://www.figma.com/proto/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A34&scaling=min-zoom&page-id=3%3A33&starting-point-node-id=3%3A34>
+ - [Prototype Presentation](https://www.figma.com/proto/nsPIyawG6UNZcBuSNlIdPy/Contact-Book?node-id=3%3A33&scaling=min-zoom&page-id=3%3A33&starting-point-node-id=3%3A34)
 
 # GitHub Pages
 
