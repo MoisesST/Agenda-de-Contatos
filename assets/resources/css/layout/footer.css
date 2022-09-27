@@ -27,6 +27,6 @@
 @media (max-width: 280px) {
   .footer__author-information,
   .footer__icon {
-    font-size: var(--mob-p-font-size-3);
+    font-size: var(--mob-p-font-size-1);
   }
 }

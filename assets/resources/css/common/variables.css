@@ -1,6 +1,6 @@
 :root {
-  /* 1 or 2 or 3...n = level */
-  --white-1: #fff;
+  /* COLORS */
+  --white-1: #fff; /* 1 or 2 or 3...n = level */
   --black-1: #000;
   --red-1: #e71a1a;
   --red-2: #ef4d37;
@@ -14,37 +14,43 @@
   --grey-2: #1a1a1a;
   --grey-3: #333;
 
+  /* FONT SIZE */
   /* dsk = desktop  */
   --dsk-h1-font-size-1: 2rem;
-  --dsk-h2-font-size-2: 1.375rem;
-  --dsk-p-font-size-3: 1rem;
+  --dsk-h2-font-size-1: 1.375rem;
+  --dsk-p-font-size-1: 1rem;
 
   /* mob = mobile   */
   --mob-h1-font-size-1: 1.375rem;
-  --mob-h2-font-size-2: 1rem;
-  --mob-p-font-size-3: 0.75rem;
+  --mob-h2-font-size-1: 1rem;
+  --mob-p-font-size-1: 0.75rem;
 
+  /* FONT FAMILY */
   /* def = default */
   --def-font-family: "Roboto", Arial, Helvetica, sans-serif;
 
+  /* TEXT COLOR */
   --main-font-color: var(--white-1);
 
   /* --font: small-caps bold var(--dsk-p-font-size-3) var(--def-font-family); */
 
+  /* BORDER RADIUS */
+  --radius-1: 5px;
   --radius-2: 10px;
 
+  /* TEXT SHADOW */
   --tx-shadow: 1px 2px 2px var(--black-1);
 
+  /* BOX SHADOW */
   --box-shadow-bottom: 0px 5px 20px var(--black-1);
   --box-shadow-top: 0px -5px 20px var(--black-1);
 
-  /* 1 or 2 or 3...n = level */
+  /* CONTAINER WIDTH AND HEIGHT */
+  --full-page-width: 100%;
+  --full-page-height: 100%;
 
   --page-center-container-width: 56.25rem;
   --header-and-footer-height: 4rem;
-  --full-page-width: 100%;
-
-  --width-percent-1: 100%;
 
   --width-rem-1: 56.25rem;
   --width-rem-2: 25rem;

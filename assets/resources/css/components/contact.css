@@ -1,0 +1,51 @@
+.content__contact-container {
+  display: flex;
+  margin: 1rem 0;
+  border-radius: var(--radius-2);
+  background: var(--white-1);
+  color: var(--black-1);
+  text-shadow: none;
+}
+
+.delete-btn {
+  border-radius: var(--radius-1);
+  background: var(--red-2);
+}
+
+.edit-btn {
+  border-radius: var(--radius-1);
+  background: var(--blue-2);
+}
+
+@media (max-width: 280px) {
+  .content__central-container {
+    font-size: var(--mob-p-font-size-1);
+  }
+
+  .btn-primary {
+    font-size: var(--mob-p-font-size-1);
+  }
+
+  .content__contact-avatar {
+    width: 5rem;
+  }
+
+  .name-info,
+  .phone-info {
+    font-size: var(--mob-p-font-size-1);
+    margin: 0.6rem 0;
+  }
+
+  .delete-btn,
+  .edit-btn {
+    padding: 0.3rem;
+  }
+
+  .delete-btn {
+    width: 49%;
+  }
+
+  .edit-btn {
+    width: 49%;
+  }
+}

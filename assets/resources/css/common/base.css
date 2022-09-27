@@ -1,6 +1,6 @@
 body {
-  width: var(--width-percent-1);
-  height: var(--width-percent-1);
+  width: var(--full-page-width);
+  height: var(--full-page-height);
   font-family: var(--def-font-family);
   color: var(--main-font-color);
   text-shadow: var(--tx-shadow);
@@ -14,14 +14,33 @@ body {
   grid-template-rows: auto 87vh auto;
 }
 
-header, footer {
+header,
+footer {
   background: var(--grey-1);
-  width: var(--width-percent-1);
+  width: var(--full-page-width);
   height: var(--height-rem-1);
 }
 
 main {
   grid-area: main;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: var(--dsk-h1-font-size-1);
+}
+
+h2 {
+  font-size: var(--dsk-h2-font-size-1);
+}
+
+p {
+  font-size: var(--dsk-p-font-size-1);
 }
 
 a {

@@ -1,0 +1,6 @@
+.content__title-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
