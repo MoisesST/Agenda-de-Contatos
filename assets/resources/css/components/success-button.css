@@ -1,0 +1,14 @@
+.success-button {
+  width: 12rem;
+  height: 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background: #84FF98;
+}
+
+.success-button:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  background: #3EF05B;
+}

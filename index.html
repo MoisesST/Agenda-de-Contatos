@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Book - Home</title>
+    <title>Contact Book - Contacts</title>
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -13,97 +14,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Bootstrap -->
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/resources/css/app.css" />
+
+    <link rel="stylesheet" href="./assets/resources/css/index.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__logo-container">
-          <img
-            class="header__logo"
-            src="./assets/resources/img/logo.png"
-            alt="logo-image"
-          />
-        </div>
-      </div>
+      <img class="logo" src="./assets/resources/img/logo.png" alt="logo" />
     </header>
 
-    <main class="content">
-      <div class="content__main-container">
-        <div
-          class="content__title-container content__title-container--gray-color"
-        >
-          <h1 class="content__title">
-            Eficiência agilidade tudo em um só site
-          </h1>
-        </div>
-
-        <div class="content__field-container-about">
-          <article class="content__field-about">
-            <div class="content__subtitle-container">
-              <h2 class="content__subtitle">About</h2>
-            </div>
-
-            <p class="content__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              imperdiet sem eget nunc maximus, a suscipit sem fermentum. Mauris
-              in mattis tellus, ut congue sapien. Donec et odio porta, dictum
-              risus eu, facilisis velit. Nunc quis ultricies tortor. Vivamus et
-              purus at libero facilisis tincidunt. Pellentesque eget odio odio.
-              Sed at faucibus purus, non vestibulum dui. Donec dapibus tellus
-              posuere, dictum lacus eget, rhoncus lorem.
-            </p>
-
-            <button
-              id="btn"
-              type="button"
-              class="btn btn-warning content__button col-10 m-auto"
-              name="button"
-            >
-              Login
-            </button>
-          </article>
+    <main class="main">
+      <div class="static-main-container">
+        <div class="title-container">
+          <h1 class="title">Contacts</h1>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="author-information-container">
         <a
-          class="footer__link"
           href="https://github.com/MoisesST"
+          class="github-repository-link"
           target="_blank"
         >
-          <p class="footer__author-information">
-            Moisés Santos teixeira &copy; 2022/2
-          </p>
+          <p class="author">Moisés Santos Teixeira &copy; 2022/2</p>
         </a>
         <a
-          class="footer__link"
           href="https://github.com/MoisesST"
+          class="github-repository-link"
           target="_blank"
         >
-          <i class="footer__icon fa-brands fa-github"></i>
+          <i class="github-icon fa-brands fa-github"></i>
         </a>
       </div>
     </footer>
 
-    <script src="./assets/resources/js/index.js" type="module"></script>
+    <script src="" type="module"></script>
   </body>
 </html>

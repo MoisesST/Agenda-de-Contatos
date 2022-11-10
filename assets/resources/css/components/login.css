@@ -1,0 +1,15 @@
+.login-container {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0rem 0rem 0rem 0.2rem #fff, 0rem 0rem 1rem 0.5rem #000;
+  background: #000;
+}
+
+.login-btn {
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+}

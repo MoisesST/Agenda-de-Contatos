@@ -1,60 +1,39 @@
-import { User } from "../../model/user.js";
-import { $class } from "../../helpers/get-element.js";
-import { validateInput } from "../../helpers/validete-input.js";
+'use strict';
 
-$class(".header__logo").onclick = function home() {
-  const option = () => confirm("Are you sure about this?");
+import { $$id } from '../../helpers/get-element.js';
+import { User } from '../../model/user.js';
 
-  const internalFunction = (value) => {
-    return value;
-  };
+const form = document.forms[0];
 
-  internalFunction(option())
-    ? open("../../../index.html")
-    : alert("Continue with your activities!");
-};
+const nameInput = form.elements[0];
+const emailInput = form.elements[1];
+const passwordInput = form.elements[2];
 
-$class(".email").onfocus = function inside() {
-  $class(".email").style.background = "#333";
-};
+const button = form.btn;
 
-$class(".email").onblur = function outside() {
-  $class(".email").style.background = "#999";
-};
+button.addEventListener('click', (event) => {
+  const isEmpty = nameInput.value && emailInput.value && passwordInput.value;
 
-console.log("Email: utfpr@gmail.com / Password: utfpr");
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const password = passwordInput.value;
 
-const ACCESS_EMAIL = "utfpr@gmail.com";
-const ACCESS_PASSWORD = "utfpr";
+  const dataIsValid = name.length >= 3
+        && email.length >= 20 && password.length >= 8;
 
-$class(".btn-login").addEventListener("click", (event) => {
-  event.preventDefault();
-
-  const inputIsValid = validateInput();
-
-  if (!inputIsValid) {
-    return alert("Fill in the fields");
+  if (isEmpty) {
+    const user = new User(
+      $$id('name').value,
+      $$id('email').value,
+      $$id('password').value
+    );
+    console.log(user);
   }
 
-  const user = new User("", $class(".email").value, $class(".password").value);
-
-  (() => {
-    $class(".email").value = "";
-    $class(".password").value = "";
-  })();
-
-  const userInformationIsValid =
-    ACCESS_EMAIL === user.getEmail() && ACCESS_PASSWORD === user.getPassword();
-
-  userInformationIsValid
-    ? open("../contacts/contacts.html")
-    : alert("Invalid email or password");
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    const author = prompt("Change the author name of this page!");
-
-    $class(".footer__author-information").innerHTML = author;
+  if (isEmpty) {
+    if (dataIsValid) {
+      event.preventDefault();
+      open('../contacts/contacts.html');
+    }
   }
 });

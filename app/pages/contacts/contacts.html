@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Book - Contacts</title>
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -13,110 +14,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Bootstrap -->
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../../../assets/resources/css/app.css" />
+
+    <link rel="stylesheet" href="../../../assets/resources/css/index.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__logo-container">
-          <img
-            class="header__logo"
-            src="../../../assets/resources/img/logo.png"
-            alt="logo-image"
-          />
-        </div>
-      </div>
+      <img
+        class="logo"
+        src="../../../assets/resources/img/logo.png"
+        alt="logo"
+      />
     </header>
 
-    <main class="content-contacts">
-      <div class="content__central-container">
-        <div class="content__title-conteiner">
-          <h1 class="content__title">Contacts</h1>
+    <main class="main">
+      <div class="content">
+        <div class="title-container">
+          <h1 class="title">Contacts</h1>
         </div>
 
-        <form id="form" class="col-11 m-auto">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name:</label>
-            <input
-              type="text"
-              class="input form-control name"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Phone:</label>
-            <input
-              type="number"
-              class="input form-control phone"
-              id="exampleInputPassword1"
-            />
-          </div>
-
-          <button type="submit" class="btn btn-primary" name="btn">
-            Submit
+        <form class="form-container-add-contact">
+          <img
+            class="avatar-add-contact"
+            src="../../../assets/resources/img/photo-user.png"
+            alt="Avatar add contact"
+          />
+          <input
+            id="input-name"
+            class="user-input-name input"
+            type="text"
+            placeholder="Contact name"
+            pattern="[A-Z|a-z]{3,}"
+            title="Please enter a valid name!"
+            required
+          />
+          <input
+            id="input-phone"
+            class="user-input-phone input"
+            placeholder="Contact phone"
+            pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
+            title="Please enter a valid number!"
+            required
+          />
+          <button id="add-btn" class="add-contact-btn success-button">
+            <i class="fa-solid fa-user-plus"></i>
           </button>
+        </form>
 
-          <div class="content__contact-container">
+        <div id="id-contact-container">
+          <div class="contact-container">
             <img
-              class="content__contact-avatar"
+              class="contact-avatar"
               src="../../../assets/resources/img/photo-user-cinza.png"
               alt="avatar"
             />
-
-            <div class="content__info-contact-container">
-              <p class="name-info">Name: Joao da silva pereira</p>
-              <p class="phone-info">Phone: +55 (42) 95453-5464</p>
-              <button class="delete-btn">
-                <i class="fa-solid fa-trash-can"></i>
-              </button>
-              <button class="edit-btn">
-                <i class="fa-solid fa-pen"></i>
-              </button>
+            <div class="container-with-contact-information">
+              <p class="contact-name">Moisés Santos Teixeira</p>
+              <p class="contact-number">(11) 94324-5748</p>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <a
-          class="footer__link"
-          href="https://github.com/MoisesST"
-          target="_blank"
-        >
-          <p class="footer__author-information">
-            Moisés Santos teixeira &copy; 2022/2
-          </p>
-        </a>
-        <a
-          class="footer__link"
-          href="https://github.com/MoisesST"
-          target="_blank"
-        >
-          <i class="footer__icon fa-brands fa-github"></i>
-        </a>
-      </div>
-    </footer>
-
-    <script src="./contacts.js" type="module"></script>
+    <script src="./contact-controller.js" type="module"></script>
   </body>
 </html>

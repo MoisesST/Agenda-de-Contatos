@@ -1,28 +1,33 @@
-import { Person } from "./person.js";
+'use strict';
 
-export class User extends Person {
-  _email;
-  _password;
-
+export class User {
   constructor(name, email, password) {
-    super(name);
+    this._name = name;
     this._email = email;
     this._password = password;
   }
 
-  getEmail() {
+  get name() {
+    return this._name;
+  }
+
+  set name(name) {
+    this._name = name;
+  }
+
+  get email() {
     return this._email;
   }
 
-  setEmail(email) {
+  set email(email) {
     this._email = email;
   }
 
-  getPassword() {
+  get password() {
     return this._password;
   }
 
-  setPassword(password) {
+  set password(password) {
     this._password = password;
   }
 }

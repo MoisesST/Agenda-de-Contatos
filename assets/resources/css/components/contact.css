@@ -1,51 +1,29 @@
-.content__contact-container {
+.contact-container {
+  width: 14rem;
+  height: 4rem;
+  margin: 2rem 0 0;
   display: flex;
-  margin: 1rem 0;
-  border-radius: var(--radius-2);
-  background: var(--white-1);
-  color: var(--black-1);
-  text-shadow: none;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0rem 0rem 0rem 0.2rem #fff, 0rem 0rem 1rem 0.5rem #000;
+  background: #000;
 }
 
-.delete-btn {
-  border-radius: var(--radius-1);
-  background: var(--red-2);
+.contact-avatar {
+  width: 3rem;
+  height: 3rem;
 }
 
-.edit-btn {
-  border-radius: var(--radius-1);
-  background: var(--blue-2);
+.container-with-contact-information {
+  width: 9rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media (max-width: 280px) {
-  .content__central-container {
-    font-size: var(--mob-p-font-size-1);
-  }
-
-  .btn-primary {
-    font-size: var(--mob-p-font-size-1);
-  }
-
-  .content__contact-avatar {
-    width: 5rem;
-  }
-
-  .name-info,
-  .phone-info {
-    font-size: var(--mob-p-font-size-1);
-    margin: 0.6rem 0;
-  }
-
-  .delete-btn,
-  .edit-btn {
-    padding: 0.3rem;
-  }
-
-  .delete-btn {
-    width: 49%;
-  }
-
-  .edit-btn {
-    width: 49%;
-  }
+.contact-name, .contact-number {
+  font-size: 0.7rem;
 }

@@ -1,25 +1,9 @@
-export class Contact {
-  _name;
-  _phone;
+'use strict';
 
-  constructor(nome, phone) {
-    this._name = nome;
-    this._phone = phone;
-  }
+import { Person } from './person.js';
 
-  getName() {
-    return this._name;
-  }
-
-  setName(name) {
-    this._name = name;
-  }
-
-  getPhone() {
-    return this._phone;
-  }
-
-  setPhone(phone) {
-    this._phone = phone;
+export class Contact extends Person {
+  constructor(name, phone) {
+    super(name, phone);
   }
 }
