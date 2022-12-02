@@ -26,7 +26,8 @@ function insertComponent(element) {
   $$id('id-contact-container').innerHTML += element;
 }
 
-$$id('add-btn').addEventListener('click', (event) => {
+$$id('form-contact').addEventListener('submit', (event) => {
+  event.preventDefault();
   const isEmpty = $$id('input-name').value && $$id('input-phone').value;
 
   const name = $$id('input-name').value;
@@ -49,11 +50,11 @@ $$id('add-btn').addEventListener('click', (event) => {
     }
   }
 
-  if (isEmpty) {
-    if (dataIsValid) {
-      event.preventDefault();
-      $$id('input-name').value = '';
-      $$id('input-phone').value = '';
-    }
-  }
+  // if (isEmpty) {
+  //   if (dataIsValid) {
+  //     event.preventDefault();
+  //     $$id('input-name').value = '';
+  //     $$id('input-phone').value = '';
+  //   }
+  // }
 });

@@ -1,0 +1,45 @@
+#title-page-create-account {
+  margin: 2rem 0;
+}
+
+#login-container-page-create-account {
+  height: 16.6rem;
+}
+
+.container-check {
+  width: 7.5rem;
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-container {
+  width: 14rem;
+  margin: 2rem 0;
+  /* height: 4rem; */
+  border-radius: 5px;
+  box-shadow: 0rem 0rem 0rem 0.2rem #fff, 0rem 0rem 1rem 0.5rem #000;
+  background: #000;
+}
+
+.cookie-field {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.cookie-legend {
+  position: relative;
+  top: 0.5rem;
+  text-align: center;
+}
+
+.ligth-mode {
+  background: #ccc;
+}
+
+#btn-cookie {
+  height: 1rem;
+  margin: 0 1rem;
+}

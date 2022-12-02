@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Boock - Login</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/resources/css/index.css" />
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <img class="logo" src="/assets/resources/img/logo.png" alt="logo" />
+    </header>
+
+    <main class="main">
+      <div class="content">
+        <div class="dark-light-container">
+          <i id="icon-moon" class="fa-solid fa-moon"></i>
+          <i id="icon-sun" class="fa-sharp fa-solid fa-sun"></i>
+        </div>
+        <div class="title-container" id="title-page-create-account">
+          <h1 class="title">Create</h1>
+        </div>
+
+        <form
+          class="login-container form"
+          id="login-container-page-create-account"
+        >
+          <label class="label lab1" for="name">Name:</label>
+          <input
+            id="name"
+            name="name"
+            class="name input"
+            type="text"
+            placeholder="Enter your name"
+            pattern="^(\s?[A-ZÀ-Ú][a-zà-ú'\.]+\s?){2,20}$"
+            title="Please enter a valid name!"
+            required
+          />
+
+          <label class="label" for="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            class="email input"
+            type="email"
+            placeholder="Enter your email"
+            pattern="\w+\.?\w+@\w+\.\w+\.?\w+\.?\w+"
+            title="Please, type a valid email!"
+            required
+          />
+
+          <label class="label" for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            class="password input"
+            type="password"
+            placeholder="Enter your password"
+            pattern=".{8,}"
+            min="8"
+            title="Enter a password with at least 8 digits"
+            required
+          />
+
+          <label class="label" for="cpf">CPF:</label>
+          <input
+            id="cpf"
+            name="cpf"
+            class="cpf input"
+            type="text"
+            placeholder="Enter your cpf"
+            required
+          />
+
+          <div class="container-check">
+            <input type="checkbox" id="save-data" name="save-data" checked />
+            <label for="save-data">Save my data</label>
+          </div>
+
+          <button
+            id="register-btn"
+            class="login-btn success-button"
+            onclick="register(event)"
+          >
+            Register
+          </button>
+        </form>
+
+        <div class="cookie-container">
+          <fieldset class="cookie-field">
+            <legend class="cookie-legend">Additional data?</legend>
+
+            <div class="folks">
+              <input
+                type="radio"
+                id="folks"
+                name="classification"
+                value="folks"
+                checked
+              />
+              <label for="folks">Folks</label>
+            </div>
+
+            <div class="work">
+              <input
+                type="radio"
+                id="work"
+                name="classification"
+                value="work"
+              />
+              <label for="work">Work</label>
+            </div>
+
+            <div class="others">
+              <input
+                type="radio"
+                id="others"
+                name="classification"
+                value="others"
+              />
+              <label for="others">Others</label>
+            </div>
+          </fieldset>
+          <button id="btn-cookie" class="success-button">No thanks</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="author-information-container">
+        <a
+          href="https://github.com/MoisesST"
+          class="github-repository-link"
+          target="_blank"
+        >
+          <p class="author">Moisés Santos Teixeira &copy; 2022/2</p>
+        </a>
+        <a
+          href="https://github.com/MoisesST"
+          class="github-repository-link"
+          target="_blank"
+        >
+          <i class="github-icon fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="/app/pages/create-account/create-account.js"></script>
+  </body>
+</html>

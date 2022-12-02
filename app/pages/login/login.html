@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Boock - Login</title>
-    <link rel="stylesheet" href="../../../assets/resources/css/index.css" />
+    <link rel="stylesheet" href="/assets/resources/css/index.css" />
   </head>
 
   <body>
     <header class="header">
       <img
         class="logo"
-        src="../../../assets/resources/img/logo.png"
+        src="/assets/resources/img/logo.png"
         alt="logo"
       />
     </header>
@@ -31,7 +31,7 @@
             class="name input"
             type="text"
             placeholder="Enter your name"
-            pattern="[A-Z|a-z]{3,}"
+            pattern="^(\s?[A-ZÀ-Ú][a-zà-ú'\.]+\s?){2,20}$"
             title="Please enter a valid name!"
             required
           />
@@ -82,6 +82,6 @@
         </a>
       </div>
     </footer>
-    <script src="./login.js" type="module"></script>
+    <script src="/app/pages/login/login.js" type="module"></script>
   </body>
 </html>

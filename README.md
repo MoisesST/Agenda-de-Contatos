@@ -10,9 +10,9 @@
 
 Caixas de Diálogo
 
-- [ ] prompt
+- [x] prompt
 - [x] alert
-- [ ] confirm
+- [x] confirm
 
 Temporizadores
 
@@ -24,16 +24,16 @@ Funções
 - [ ] Função anônima com argumento
 - [ ] Função anônima sem argumento
 - [ ] Função anônima com retorno
-- [ ] Função auto-executável
-- [ ] Função com nome
+- [x] Função auto-executável
+- [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
-- [ ] Função Flecha - Arrow Function
+- [x] Função Flecha - Arrow Function
 
 Eventos
 
 - [ ] Evento de carregamento do documento - onload
-- [ ] Evento de movimento do mouse
+- [x] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
@@ -43,13 +43,13 @@ Acesso aos elementos DOM do HTML
 
 - [ ] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
-- [ ] Via getElementsByName()
-- [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via getElementsByName()
+- [x] Via getElementsByTagName()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
-- [ ] Especificar o tratador de evento inline
+- [x] Especificar o tratador de evento inline
 - [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [ ] Usar o operador this em funções tratadoras de eventos.
@@ -59,13 +59,13 @@ Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
 - [ ] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
-- [ ] String Template
+- [x] String Template
 
 Objetos
 
-- [ ] Criar objeto usando função construtora ou notação literal
-- [ ] Criar objetos a partir da definição de classes do ES6
-- [ ] Usar herança prototipal nativa ou herança de classes do ES6
+- [x] Criar objeto usando função construtora ou notação literal
+- [x] Criar objetos a partir da definição de classes do ES6
+- [x] Usar herança prototipal nativa ou herança de classes do ES6
 
 Qualidade do código
 
@@ -91,20 +91,21 @@ Formulário
 
 jQuery
 
-- [ ] Uso de seletores CSS - id, classe e tag
-- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
-- [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
-- [ ] Efeitos fade ou slide
-- [ ] Especificar o tratador de algum evento via jQuery
-- [ ] Manipulação do CSS via função css() e addClass()/removeClass()
-- [ ] Manipulação do conteúdo de um input e div usando jQuery
-- [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
+- [x] Uso de seletores CSS - id, classe e tag
+- [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [x] Uso de seletores hierárquicos dinâmicos - parent/children/next
+- [x] Efeitos fade ou slide
+- [x] Especificar o tratador de algum evento via jQuery
+- [x] Manipulação do CSS via função css() e addClass()/removeClass()
+- [x] Manipulação do conteúdo de um input e div usando jQuery
+- [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
 Web Storage
 
 - [ ] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
+- [ ] Criar e guardar um dado em um Cookie
 
 Ajax com Backend
 

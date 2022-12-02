@@ -1,0 +1,17 @@
+.page-access-container {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0rem 0rem 0rem 0.2rem #fff, 0rem 0rem 1rem 0.5rem #000;
+  background: #000;
+}
+
+.message-container {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
