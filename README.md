@@ -16,18 +16,18 @@ Caixas de Diálogo
 
 Temporizadores
 
-- [ ] setInterval
-- [ ] setTimeout
+- [x] setInterval
+- [x] setTimeout
 
 Funções
 
-- [ ] Função anônima com argumento
-- [ ] Função anônima sem argumento
-- [ ] Função anônima com retorno
+- [x] Função anônima com argumento
+- [x] Função anônima sem argumento
+- [x] Função anônima com retorno
 - [x] Função auto-executável
 - [x] Função com nome
-- [ ] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
+- [x] Função aninhada/local - declarar uma função dentro de outra
+- [x] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 Eventos
@@ -57,8 +57,8 @@ Tratadores de Evento
 Objetos Nativos
 
 - [ ] Usar pelo menos 3 métodos de manipulação de array
-- [ ] Usar laço de repetição (for..in ou for..of ou forEach)
-- [ ] Usar pelo menos 3 métodos para manipulação de string
+- [x] Usar laço de repetição (for..in ou for..of ou forEach)
+- [x] Usar pelo menos 3 métodos para manipulação de string
 - [x] String Template
 
 Objetos
@@ -102,11 +102,12 @@ jQuery
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
-- [ ] Leitura e escrita de JSON
-- [ ] Criar e guardar um dado em um Cookie
+- [x] LocalStorage ou SessionStorage
+- [x] Leitura e escrita de dados simples
+- [x] Leitura e escrita de JSON
+- [x] Criar e guardar um dado em um Cookie
 
 Ajax com Backend
 
 - [ ] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
+- [ ] Requisições AJAX para o backend criado ou então para uma API Rest pública qualquer (Busca CEP API ou IBGE API ou outra).

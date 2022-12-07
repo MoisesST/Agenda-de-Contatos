@@ -2,52 +2,69 @@
 
 'use strict';
 
+$('body').addClass(localStorage.getItem('mode'));
+
 (() => {
-  let darkMode = document.querySelector('.fa-moon');
-  let lightMode = document.querySelector('.fa-sun');
-  darkMode.addEventListener('mouseover', handleDarkMode);
-  lightMode.addEventListener('mouseover', handleLightMode);
+  function lastAccessInformation(text) {
+    const lastAccessInformationInCapitalLetters = function () {
+      return text.toUpperCase();
+    };
+
+    const partOfLastAccessInformation = function (text) {
+      return text.substring(0, 24);
+    };
+
+    const informationDivision = (text) => {
+      for (let i = 0; i < 4; i++) {
+        text = text.replace(' ', '|');
+      }
+      return text;
+    };
+
+    return informationDivision(
+      partOfLastAccessInformation(lastAccessInformationInCapitalLetters())
+    );
+  }
+
+  document.cookie = `lastAcess=${lastAccessInformation(Date())}`;
 })();
 
-function handleDarkMode() {
+let darkMode = document.querySelector('.fa-moon');
+darkMode.addEventListener('mouseover', () => {
   $('.fa-moon').css('color', '#00f');
   $('body').removeClass('ligth-mode');
-}
+  localStorage.mode = 'dark-mode';
+});
 
-function handleLightMode() {
+let lightMode = document.querySelector('.fa-sun');
+lightMode.addEventListener('mouseover', () => {
   $('#icon-sun').css('color', '#ff0');
   $('html body').addClass('ligth-mode');
-}
+  localStorage.mode = 'ligth-mode';
+});
 
 $('.dark-light-container>i').on('click', function () {
   alert('Activated!');
 });
 
-$('div').on('click', function() {
+const changeTitleText = prompt('Enter text to change title content:');
+if (changeTitleText) $('.title-container').html(`<h1>${changeTitleText}</h1>`);
+
+$('div').on('click', function () {
   let $this = $(this);
   $this.next('form').hide();
-})
+});
 
 $('.lab1 +input').on('blur', function () {
   $('#name').css('background', '#ccc');
 });
 
-// document.cookie = `name=${$('.name').val()}`;
-
-$('input').click(function() {
+$('input').click(function () {
   let $this = $(this);
   alert($this.parent('form').children('label').text());
-})
+});
 
 $('.cpf').mask('000.000.000-00');
-
-$('#btn-cookie').click(function() {
-  $('.cookie-container').fadeOut();
-})
-
-const changeFooterText = prompt('Enter text to change footer content:')
-if (changeFooterText)
-  $('a').html(`<p>${changeFooterText}</p>`);
 
 const listUser = [];
 
@@ -62,7 +79,31 @@ function register(e) {
   };
   listUser.push(user);
 
-  $('form>input').val('');
+  localStorage.listUser = JSON.stringify(listUser);
+  console.log(listUser);
 
-  console.log(user);
+  $('form>input').val('');
 }
+
+$('#btn-cookie').click(function () {
+  $('.cookie-cont').fadeOut();
+});
+
+$('#btn-login').click(function () {
+  setTimeout(function () {
+    open('/app/pages/login/login.html');
+  }, 1000);
+});
+
+let i = 0;
+
+function changeButtonColor() {
+  const interval = setInterval(function () {
+    $('#btn-login').css('background', `#${40 + i++}${20 + i++}${80 + i++}`);
+  }, 500);
+
+  setTimeout(function () {
+    clearInterval(interval);
+  }, 15000);
+}
+changeButtonColor();

@@ -3,7 +3,7 @@
 }
 
 #login-container-page-create-account {
-  height: 16.6rem;
+  height: 20.6rem;
 }
 
 .container-check {
@@ -16,6 +16,7 @@
 
 .cookie-container {
   width: 14rem;
+  height: 7rem;
   margin: 2rem 0;
   /* height: 4rem; */
   border-radius: 5px;
@@ -35,11 +36,17 @@
   text-align: center;
 }
 
+.cookie-cont2 {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ligth-mode {
   background: #ccc;
 }
 
 #btn-cookie {
-  height: 1rem;
   margin: 0 1rem;
 }

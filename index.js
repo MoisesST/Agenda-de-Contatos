@@ -9,7 +9,7 @@ btnSignIn.addEventListener('click', () => {
 const btnCreateAccount = document.getElementsByTagName('button')[1];
 
 btnCreateAccount.addEventListener('click', () => {
-  open('/app/pages/');
+  open('/app/pages/create-account/create-account.html');
 });
 
 console.log(btnCreateAccount);
